@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Topmenu from "./Topmenu";
-import Searchbar from "./Searchbar";
+import Search from "./Search";
 import Nav from "./Nav";
 
 function Header() {
@@ -10,7 +10,7 @@ function Header() {
       <Wrap>
         <Area>
           <Topmenu />
-          <Searchbar />
+          <Search />
         </Area>
       </Wrap>
       <Nav />

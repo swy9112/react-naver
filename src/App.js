@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "./components/Header/Header";
-import Globalstyles from "./components/Globalstyles";
+import Globalstyles from "./styles/Globalstyles";
 
 function App() {
   return (
