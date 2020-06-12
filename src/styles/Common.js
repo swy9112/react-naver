@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import logo from "../images/NAVER_Logo.jpg";
 
 //텍스트를 이미지로 표시
 export const AnIcon = styled.span`
@@ -14,8 +15,13 @@ export const AnIcon = styled.span`
       return `url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);`;
     } else if (props.topmenu) {
       return `url(https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);`;
-    } else {
-      return `url(../../images/NAVER_Logo.jpg)`;
+    } else if (props.logo) {
+      return `url(${logo})`;
+    }
+  }};
+  background-size: ${props => {
+    if (props.logo) {
+      return `contain`;
     }
   }};
   background-repeat: no-repeat;

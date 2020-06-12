@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { AnText, AnIcon } from "../../styles/Common";
+import Input from "../../styles/Input";
 
 function Search() {
   return (
     <>
       <Logo>
-        <AnIcon wd="100" he="100"></AnIcon>
+        <AnIcon logo wd="154" he="30"></AnIcon>
         <AnText>네이버</AnText>
       </Logo>
+      <Input />
     </>
   );
 }
